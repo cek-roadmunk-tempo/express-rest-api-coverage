@@ -9,4 +9,8 @@ router.get('/', function(req, res, next) {
   ])
 });
 
+app.get('/users/:userId', (req, res) => {
+  res.send(req.params)
+})
+
 module.exports = router;
