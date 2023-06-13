@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   ])
 });
 
-app.get('/users/:userId', (req, res) => {
+router.get('/users/:userId', (req, res) => {
   res.send(req.params)
 })
 
